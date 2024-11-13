@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-white width-[100px] height-[100px] flex justify-center items-center bg-no-repeat bg-cover bg-center relative border-2 border-[#cccccc] cursor-pointer transition-transform rounded-sm hover:scale-110
+  }
+  .cardBack{
+    @apply bg-[url('./images/dots.jpg')] bg-repeat bg-auto
+  }
+}
+
+body{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(31,161,54,1) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.shuff{
+  -webkit-animation: rotate-tl 0.5s ease-in-out 3 alternate-reverse backwards;
+  animation: rotate-tl 0.5s ease-in-out 3 alternate-reverse backwards;
+}
+.pointer-none{
+  pointer-events: none;
+}
+.animate{
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: flipInY;
+  animation-name: flipInY;
+}
+.flipInY {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInY;
+  animation-name: flipInY;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.gameOver {
+	-webkit-animation: gameOver 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: gameOver 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  white-space: nowrap;
+}
+  @-webkit-keyframes rotate-tl {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+    }
+  }
+  @keyframes rotate-tl {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+          
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+            
+    }
+  }
+  @-webkit-keyframes flipInY {
+  0% {
+  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  opacity: 0;
+  }
+  40% {
+  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+  transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  }
+  60% {
+  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+  transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+  opacity: 1;
+  }
+  80% {
+  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+  100% {
+  -webkit-transform: perspective(400px);
+  transform: perspective(400px);
+  }
+  }
+  @keyframes flipInY {
+  0% {
+  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  opacity: 0;
+  }
+  40% {
+  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+  transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  }
+  60% {
+  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+  transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+  opacity: 1;
+  }
+  80% {
+  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+  100% {
+  -webkit-transform: perspective(400px);
+  transform: perspective(400px);
+  }
+  } 
+  @-webkit-keyframes gameOver {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes gameOver {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM memory game</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+
+  <body class="m-auto p-0 font-sans text-white box-border relative ">
+    <div class="main flex justify-center items-center w-full h-screen p-10 flex-col relative">
+
+      <div id="gameOver" class="absolute h-screen w-screen justify-center items-center z-10 flex-col bg-[#000000bf] hidden">
+        <div class="inn p-[80px] rounded-3xl border border-white bg-[#000000bf] flex flex-col justify-center items-center">
+          <div class="gameOver text-7xl text-center text-white uppercase ">Game Over</div>
+          <button class="resetGame mt-10 bg-[#c62124] py-2 px-5 rounded-lg hover:bg-[#ffffff] hover:text-[#c62124] border border-white font-bold tracking-wider antialiased uppercase text-3xl">Play Again</button>
+        </div>
+      </div>
+    
+      <div id="cardContainer" class="grid grid-cols-4 grid-rows-4 gap-4 w-[500px] h-[500px]">
+      </div>
+
+      <button class="resetGame mt-8 bg-[#f8484c] py-2 px-5 rounded-lg hover:bg-[#c62124]  font-bold tracking-wider antialiased uppercase border border-white">Reset Game</button>
+      
+      <div class="score mt-5 w-[120px] p-3 bg-[#ffffff80] border border-[#31A845] rounded-xl text-[#31A845] flex flex-col justify-start items-center text-xs ">
+        <div class="">Time Left: <span class="timeCount font-bold">60</span></div>
+        <div class="">Clics Left: <span class="clicsCount font-bold">50</span>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
