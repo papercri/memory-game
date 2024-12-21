@@ -14,3 +14,31 @@ This is a simple memory game built with HTML, CSS, and JavaScript. The objective
 ## Features
 
 - **Interactive Gameplay**: Smooth animations and transitions enhance the user experience.
+- 
+## Technologies Used
+
+- HTML
+- CSS (Tailwind CSS)
+- JavaScript
+
+## Installation
+
+To run the game locally:
+
+   1. **Clone the Repository**:
+ 
+      git clone https://github.com/papercri/memory-game.git
+
+   2. **Navigate to the Project Directory**:
+  
+      cd memory-game
+   
+   3. **Install Dependencies**:
+
+      npm install
+   
+   4. **Build the CSS**:
+
+      npx tailwindcss -i ./input.css -o ./output.css --watch
+
+   5. Open index.html in Your Browser.
