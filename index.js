@@ -31,7 +31,7 @@ function generateCards() {
   for(i=0;i<ids.length;i++){
     newCard = document.createElement("div");
     newCard.setAttribute("id", ids[i]);
-    newCard.classList.add("cardBack", "card", "shuff");
+    newCard.classList.add("cardBack", "card");
     cards.push(newCard);
     countClics = 0;
   }
@@ -47,7 +47,7 @@ function generateCards() {
 
 function turnCard(event){
   const clickedCard = event.target;
-  clickedCard.classList.remove("cardBack", "shuff");
+  clickedCard.classList.remove("cardBack");
   clickedCard.classList.add("animate", "pointer-none");
   setTimeout(() => {
     clickedCard.classList.remove("animate");

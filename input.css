@@ -16,9 +16,7 @@ body{
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(31,161,54,1) 100%);
   font-family: Arial, Helvetica, sans-serif;
 }
-.shuff{
- 
-}
+
 .pointer-none{
   pointer-events: none;
 }
@@ -47,64 +45,7 @@ body{
 	animation: gameOver 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   white-space: nowrap;
 }
-  @-webkit-keyframes rotate-tl {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-    }
-  }
-  @keyframes rotate-tl {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-          
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-            
-    }
-  }
-  @-webkit-keyframes flipInY {
-  0% {
-  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-  transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  opacity: 0;
-  }
-  40% {
-  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-  transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  }
-  60% {
-  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-  transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-  opacity: 1;
-  }
-  80% {
-  -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-  transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-  }
-  100% {
-  -webkit-transform: perspective(400px);
-  transform: perspective(400px);
-  }
-  }
+
   @keyframes flipInY {
   0% {
   -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
