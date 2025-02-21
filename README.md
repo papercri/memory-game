@@ -2,7 +2,7 @@
 
 This is a simple memory game built with HTML, CSS, and JavaScript. The objective is to match pairs of cards by flipping them over and remembering their positions.
 
-Link: memory-game-five-black.vercel.app
+Link: http://memory-game-five-black.vercel.app
 
 ## How to Play
 
